@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/show_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/dummy_stock_name"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/show_current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/dummy_current_price"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/show_stock_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/open"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/text_high"
+                app:layout_constraintLeft_toLeftOf="@id/show_stock_name"
+                app:layout_constraintRight_toLeftOf="@id/show_open_price"
+                app:layout_constraintTop_toBottomOf="@id/show_stock_name"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="@string/high"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/show_high_price"
+                app:layout_constraintHorizontal_bias="0.433"
+                app:layout_constraintStart_toEndOf="@+id/show_open_price"
+                app:layout_constraintTop_toTopOf="@+id/show_open_price" />
+
+            <TextView
+                android:id="@+id/text_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:paddingBottom="20dp"
+                android:text="@string/low"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/show_low_price"
+                app:layout_constraintTop_toBottomOf="@+id/text_open" />
+
+            <TextView
+                android:id="@+id/show_open_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="65dp"
+                android:text="@string/dummy_high"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_open"
+                app:layout_constraintLeft_toRightOf="@id/text_open"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <TextView
+                android:id="@+id/show_high_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="@string/dummy_high"
+                android:textColor="@color/high_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_high"
+                app:layout_constraintLeft_toLeftOf="@id/show_current_price"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/show_low_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/dummy_high"
+                android:textColor="@color/low_red"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/text_low"
+                app:layout_constraintEnd_toEndOf="@+id/show_open_price" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:paddingBottom="20dp"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/show_date"
+                app:layout_constraintTop_toBottomOf="@+id/text_high"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="@string/dummy_date"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text_date"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "3241465858",
+    "firebase_url": "https://pallavi-kaushik-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pallavi-kaushik",
+    "storage_bucket": "pallavi-kaushik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3241465858:android:092414c614907bfad76f1b",
+        "android_client_info": {
+          "package_name": "com.pallavikaushik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3241465858-gdnr4l203qv7ek21rmrlnbup1ou93eed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaI-AeFJqc9dyTH6CborYPcrJhOA9Bips"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3241465858-gdnr4l203qv7ek21rmrlnbup1ou93eed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
